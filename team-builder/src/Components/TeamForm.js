@@ -29,6 +29,7 @@ const TeamForm = (props) => {
         name="name"
         value={teamMember.name}
         onChange={changeHandler}
+        placeholder="enter name"
       />
       <label htmlFor="email">Email: </label>
       <input
@@ -36,6 +37,7 @@ const TeamForm = (props) => {
         name="email"
         value={teamMember.email}
         onChange={changeHandler}
+        placeholder="enter email"
       />
 
       <label htmlFor="role">Role: </label>
@@ -44,6 +46,7 @@ const TeamForm = (props) => {
         name="role"
         value={teamMember.role}
         onChange={changeHandler}
+        placeholder="enter role"
       />
 
       <button type="submit">Add New Member</button>
