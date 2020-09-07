@@ -1,8 +1,6 @@
 import React from "react";
 
 const Team = (props) => {
-  console.log("Team props: ".props);
-
   return (
     <div className="team-list">
       {props.memberList.map((member) => (

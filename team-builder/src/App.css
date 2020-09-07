@@ -1,3 +1,19 @@
 .App {
   text-align: center;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+}
+
+button {
+  margin-top: 1rem;
+  height: 2rem;
+  background: green;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}

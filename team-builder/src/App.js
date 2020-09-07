@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import "./App.css";
 import TeamForm from "./Components/TeamForm";
 import Team from "./Components/Team";
@@ -9,14 +8,14 @@ function App() {
     {
       id: 1,
       name: "Jon Snow",
-      email: "jonsnow@winterfell.com",
-      role: "Commander of the Night's Watch",
+      email: "jonsnow@beyondthewall.com",
+      role: "The King Beyond the Wall",
     },
   ]);
 
   const addNewMember = (formData) => {
     const newMember = {
-      id: Date.now(),
+      id: Date.now(), //using Date.now() generates a unique key each millisecond
       name: formData.name,
       email: formData.email,
       role: formData.role,
@@ -26,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Team Member List</h1>
+      <h1>Westeros Census</h1>
       <TeamForm addNewMember={addNewMember} />
       <Team memberList={memberList} />
     </div>

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 
 const TeamForm = (props) => {
   console.log("TeamForm props: ", props);
@@ -10,8 +9,6 @@ const TeamForm = (props) => {
   });
 
   const changeHandler = (e) => {
-    console.log(e.target.value);
-    console.log("teamMember: ", teamMember);
     setMember({
       ...teamMember,
       [e.target.name]: e.target.value,
@@ -26,14 +23,14 @@ const TeamForm = (props) => {
 
   return (
     <form onSubmit={submitForm}>
-      <label htmlFor="name">Name</label>
+      <label htmlFor="name">Name: </label>
       <input
         type="text"
         name="name"
         value={teamMember.name}
         onChange={changeHandler}
       />
-      <label htmlFor="email">Email</label>
+      <label htmlFor="email">Email: </label>
       <input
         type="text"
         name="email"
@@ -41,7 +38,7 @@ const TeamForm = (props) => {
         onChange={changeHandler}
       />
 
-      <label htmlFor="role">Role</label>
+      <label htmlFor="role">Role: </label>
       <input
         type="text"
         name="role"
