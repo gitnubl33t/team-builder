@@ -26,6 +26,7 @@ function App() {
     <div className="App">
       <h1>Team Member List</h1>
       <TeamForm addNewMember={addNewMember} />
+      <Team teamlist={teamlist} />
     </div>
   );
 }
