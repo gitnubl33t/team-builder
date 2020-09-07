@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import "./App.css";
 import TeamForm from "./Components/TeamForm";
+import Team from "./Components/Team";
 
 function App() {
   const [memberList, setMemberList] = useState([
@@ -26,7 +28,7 @@ function App() {
     <div className="App">
       <h1>Team Member List</h1>
       <TeamForm addNewMember={addNewMember} />
-      <Team teamlist={teamlist} />
+      <Team memberList={memberList} />
     </div>
   );
 }

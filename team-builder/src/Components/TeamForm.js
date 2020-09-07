@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
 
 const TeamForm = (props) => {
   console.log("TeamForm props: ", props);
@@ -24,7 +25,7 @@ const TeamForm = (props) => {
   };
 
   return (
-    <form onSumbit={submitForm}>
+    <form onSubmit={submitForm}>
       <label htmlFor="name">Name</label>
       <input
         type="text"

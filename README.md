@@ -16,7 +16,7 @@ In this project you'll build an app that will keep track of memebers of a team. 
 - [x] Use `npx create-react-app team-builder --use-npm` or `create-react-app team-builder` to initiate the project.
 - [x] CD into your `team-builder` directory
 - [x] Start up the app using `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [x] Push commits: git push origin `<firstName-lastName>`.
 
@@ -89,5 +89,5 @@ After finishing your required elements, you can push your work further. These go
 
 ## Submission Format
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
+- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
 - [ ] Fill out your module retrospective form [here](https://forms.lambdaschool.com/module-retrospective) with a link to your PR
